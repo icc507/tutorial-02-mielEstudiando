@@ -9,6 +9,18 @@
 #		  mundo 44
 #La salida debe ser
 #         ('mundo', 44, 20, 90, 'hola', 'mundo', 44)
-t = tuple(input().split())
-m = tuple(input().split())
+lista1 = input().split()
+lista2 = input().split()
+for i in range(len(lista1)):
+    try:
+        lista1[i]=int(lista1[i])
+    except ValueError:
+        exit
+for i in range(len(lista2)):
+    try:
+        lista2[i]=int(lista2[i])
+    except ValueError:
+        exit
+t = tuple(lista1)
+m = tuple(lista2)
 print(m+t+m)
