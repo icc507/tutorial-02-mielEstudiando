@@ -26,8 +26,8 @@ t = input().split()
 try:
 	for num in range(len(t)):
 		t[num]=int(t[num])
-	arbolito=arbolTernario(t[0])
-	for num in t[1:-1]:
+	arbolito=[]
+	for num in t:
 		insertaEnArbolTernario(arbolito,num)
 	print(arbolito)
 except ValueError:
